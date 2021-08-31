@@ -21,7 +21,6 @@ class Coin {
 
 class Game{
     constructor(herotype){
-
         this.game_over = false;
         if(herotype==="luigi"){
             this.hero = new Luigi();
@@ -31,7 +30,7 @@ class Game{
         this.lives=3;
         this.conis = [];
         for(let index =0;index<10;i++){
-            
+            this.conis.push(new Coin(10));
         }
         
 }   
